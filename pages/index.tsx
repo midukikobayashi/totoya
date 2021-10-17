@@ -24,11 +24,12 @@ const Home: NextPage = () => {
 
       </Head>
 
-      <main className="w-screen overflow-hidden">
-        <div>居酒屋</div>
-        <div>魚ゞ家</div>
+      <main className="w-screen overflow-hidden bg-black font-serif text-white text-center p-16">
 
-        <div>ちょこっとクセの強い大将が最高の料理を提供してくれる、隠れ家的、居酒屋。</div>
+        <div className="text-2xl">居酒屋</div>
+        <div className="text-4xl">魚ゞ家</div>
+
+        <div className="border border-yellow-900">ちょこっとクセの強い大将が最高の料理を提供してくれる、隠れ家的、居酒屋。</div>
         <div>about</div>
         <div>当店は「おまかせ」料理がメインとなります。
           来店されたお客様のお口に合わせた

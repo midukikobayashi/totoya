@@ -24,19 +24,41 @@ const Home: NextPage = () => {
 
       </Head>
 
-      <main className="w-screen overflow-hidden bg-black font-serif text-white text-center p-16">
+      <main className="w-screen overflow-hidden bg-black font-serif text-white text-center p-10 text-sm leading-relaxed">
 
         <div className="text-2xl">居酒屋</div>
-        <div className="text-4xl">魚ゞ家</div>
+        <div className="text-4xl mb-8">魚ゞ家</div>
+        <Image
+              src="/images/sasimi.jpg"
+              height={176}
+              width={265}
+              alt="sasimi"
+             
+            ></Image>
+            <div className="animate-pulse z-40">
+             <div className="rounded-sm opacity-50 bg-yellow-900 h-12 w-12 mb-8"></div>
+             </div>
 
-        <div className="border border-yellow-900">ちょこっとクセの強い大将が最高の料理を提供してくれる、隠れ家的、居酒屋。</div>
-        <div>about</div>
-        <div>当店は「おまかせ」料理がメインとなります。
+        <div className="border border-yellow-900 p-7">ちょこっとクセの強い大将が<br />最高の料理を提供してくれる、<br />隠れ家的、居酒屋。</div>
+        <div className="text-yellow-600 font-bold text-2xl opacity-75 m-8">about</div>
+        <Image
+              src="/images/tennai.png"
+              height={260}
+              width={195}
+              alt="tennai"
+            ></Image>
+             <div className="animate-pulse z-40">
+             <div className="rounded-sm opacity-50 bg-yellow-900 h-12 w-12 mb-8"></div>
+             </div>
+        
+        
+
+        <div>当店は「おまかせ」料理がメインとなります。<br />
           来店されたお客様のお口に合わせた
           お料理を提供。
-
+          <br />
           だから、長く通いたくなる。
-
+          <br />
           当店はちょこっとクセの強い大将と、
           馴染みの常連様が集う、小さな居酒屋。
 
@@ -47,7 +69,7 @@ const Home: NextPage = () => {
           一度訪れると、常連になりたくなる、
           そんなお店です。
         </div>
-        <div>menu</div>
+        <div className="text-yellow-600 font-bold text-2xl opacity-75 m-8">menu</div>
         <div>当日仕入れた新鮮なお魚を
           最高の状態で提供いたします。
 
@@ -61,7 +83,7 @@ const Home: NextPage = () => {
         </div>
         <button className="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Button</button>
 
-        <div>contact</div>
+        <div className="text-yellow-600 font-bold text-2xl opacity-75 m-8">contact</div>
         <div>おひとりさま〜少人数でのご利用には
           カウンター席が
           おすすめ。

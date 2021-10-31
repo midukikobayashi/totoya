@@ -2,6 +2,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import Image from "next/image";
 import React from "react";
+import Footer from "../compornents/footer";
 
 const Home: NextPage = () => {
   return (
@@ -34,14 +35,16 @@ const Home: NextPage = () => {
       <main className="w-screen overflow-hidden bg-black font-serif text-white text-center p-10 text-sm leading-relaxed">
         <div className="text-2xl">居酒屋</div>
         <div className="text-4xl mb-8">魚ゞ家</div>
-        <Image
-          src="/images/sasimi.jpg"
-          height={176}
-          width={265}
-          alt="sasimi"
-        ></Image>
-        <div className="animate-pulse z-40">
-          <div className="rounded-sm opacity-50 bg-yellow-900 h-28 w-20 mb-8"></div>
+        <div className="relative">
+          <Image className="z-50"
+            src="/images/sasimi.jpg"
+            height={176}
+            width={265}
+            alt="sasimi"
+          ></Image>
+          <div className="absolute bottom-0 left-0 animate-pulse z-40">
+            <div className="rounded-sm opacity-50 bg-yellow-900 h-28 w-20 mb-8"></div>
+          </div>
         </div>
 
         <div className="border border-yellow-900 p-7">
@@ -123,7 +126,6 @@ const Home: NextPage = () => {
           alt="sankaku02"
         ></Image>
 
-
         <div className="text-yellow-600 font-bold text-2xl opacity-75 m-8">
           contact
         </div>
@@ -137,32 +139,21 @@ const Home: NextPage = () => {
           下記お問い合わせフォームまたは、 TEL：017-723-7555 まで。
           （お問い合わせの際はHPを見た とお伝えいただけますとスムーズです）
         </div>
-        
+
         <footer className="bg-gray-200">
           <div className="p-2 text-center text-xs">
-          <div>top</div>
-          <div>menu</div>
-          <div>contact</div>
-          <div>
-            <div>住所：青森県青森市本町1-7-6 煉瓦館ビル 203</div>
-            <div>TEL：017-723-7555</div>
-            <div>営業時間：18:00~24:00（感染拡大防止のため、時短営業中)</div>
-          </div>
+            <div>top</div>
+            <div>menu</div>
+            <div>contact</div>
+            <div>
+              <div>住所：青森県青森市本町1-7-6 煉瓦館ビル 203</div>
+              <div>TEL：017-723-7555</div>
+              <div>営業時間：18:00~24:00（感染拡大防止のため、時短営業中)</div>
+            </div>
           </div>
         </footer>
+        <Footer></Footer>
       </main>
-      <footer className="bg-gray-200">
-          <div className="p-2 text-center text-xs">
-          <div>top</div>
-          <div>menu</div>
-          <div>contact</div>
-          <div>
-            <div>住所：青森県青森市本町1-7-6 煉瓦館ビル 203</div>
-            <div>TEL：017-723-7555</div>
-            <div>営業時間：18:00~24:00（感染拡大防止のため、時短営業中)</div>
-          </div>
-          </div>
-        </footer>
     </div>
   );
 };

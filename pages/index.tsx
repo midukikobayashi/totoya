@@ -46,7 +46,7 @@ const Home: NextPage = () => {
               width={265}
               alt="sasimi"
             ></Image>
-            <div className="absolute bottom-0 left-0 animate-pulse z-40">
+            <div className="absolute bottom-20 left-0 animate-pulse z-40">
               <div className="rounded-sm opacity-50 bg-yellow-900 h-28 w-20 mb-8"></div>
             </div>
           </div>
@@ -69,7 +69,7 @@ const Home: NextPage = () => {
               width={195}
               alt="tennai"
             ></Image>
-            <div className="absolute bottom-0 left-0 animate-pulse z-40">
+            <div className="absolute bottom-0 left-50 animate-pulse z-40">
               <div className="rounded-sm opacity-50 bg-yellow-900 h-28 w-24 mb-8"></div>
             </div>
           </div>

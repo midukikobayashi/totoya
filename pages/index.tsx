@@ -31,6 +31,10 @@ const Home: NextPage = () => {
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
         />
+        <link
+          href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+          rel="stylesheet"
+        ></link>
       </Head>
 
       <main>
@@ -126,21 +130,12 @@ const Home: NextPage = () => {
             <br />
             <p className="m-4">あなたの知らないお料理に出会えるかも？</p>
           </div>
-          <button className="bg-gradient-to-r from-yellow-800 box-content h-4 w-7 p-3">
-            more
-          </button>
-          <Image
-            src="/images/gray01.png"
-            height={20}
-            width={19}
-            alt="sankaku01"
-          ></Image>
-          <Image
-            src="/images/gray02.png"
-            height={20}
-            width={19}
-            alt="sankaku02"
-          ></Image>
+          <div className="object-center">
+            <button className="bg-gradient-to-r from-yellow-800 box-content h-4 w-7 p-3">
+              more
+            </button>
+            <i className="fas fa-chevron-circle-right animate-pulse opacity-75"></i>
+          </div>
 
           <div className="text-yellow-600 font-bold text-2xl opacity-75 m-8">
             contact

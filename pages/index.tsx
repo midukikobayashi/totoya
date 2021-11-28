@@ -43,13 +43,6 @@ const Home: NextPage = () => {
           <div className="text-2xl">居酒屋</div>
           <div className="text-4xl mb-8">魚ゞ家</div>
           <div className="relative">
-            <Image
-              className="z-50"
-              src="/images/sasimi.jpg"
-              height={176}
-              width={265}
-              alt="sasimi"
-            ></Image>
             <div className="absolute bottom-20 left-0 animate-pulse z-40">
               <div className="rounded-sm opacity-50 bg-yellow-900 h-28 w-20 mb-8"></div>
             </div>

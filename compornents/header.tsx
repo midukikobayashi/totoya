@@ -2,12 +2,12 @@ import React, { FC } from "react";
 
 const Header: FC = (props) => {
   return (
-    <header className="">
-      <ol className="p-2 text-center text-xs flex">
-        <li className="m-8">top</li>
-        <li className="m-8">menu</li>
-        <li className="m-8">contact</li>
-      </ol>
+    <header className="bg-cover bg-header h-60 backdrop-opacity-25 ">
+      <div className="font-extrabold tracking-widest text-center py-10">
+        <p className="">居酒屋</p>
+        <p className="text-5xl">魚ゞ家</p>
+        
+      </div>
     </header>
   );
 };

@@ -11,7 +11,7 @@ const Home: NextPage = () => {
       <Head>
         <title>居酒屋　魚ゞ家-青森市本町-</title>
         <meta name="description" content="izakaya totoya Official Website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/icon.ico" />
         <meta
           property="og:title"
           content="青森市本町、煉瓦館２Fにある隠れ家的居酒屋。"
@@ -38,14 +38,12 @@ const Home: NextPage = () => {
       </Head>
 
       <main>
-        <div className="w-screen bg-black font-serif text-white text-center p-10 text-sm leading-relaxed">
+        <div className="bg-black font-serif text-white text-center text-sm leading-relaxed">
           <Header></Header>
-          <div className="text-2xl">居酒屋</div>
-          <div className="text-4xl mb-8">魚ゞ家</div>
-          <div className="relative">
-            <div className="absolute bottom-20 left-0 animate-pulse z-40">
-              <div className="rounded-sm opacity-50 bg-yellow-900 h-28 w-20 mb-8"></div>
-            </div>
+
+          
+          <div className="p-8">
+            
           </div>
 
           <div className="border border-yellow-900 p-7">

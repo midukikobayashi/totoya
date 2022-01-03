@@ -74,4 +74,22 @@ footer {
   height: 2rem;
   text-align: center;
 }
+header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 
+  margin: auto;
+  background-color: $gold;
+  width: 100%;
+}
+.logo {
+  text-align: center;
+}
+.hum {
+  top: 5px;
+  padding-right: 5px;
+  position: fixed;
+  text-align: right;
+  //background-color: blue;
+  width: 100%;
+}

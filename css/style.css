@@ -113,6 +113,26 @@ footer {
   text-align: center;
 }
 
+header {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin: auto;
+  background-color: #84692f;
+  width: 100%;
+}
+
+.logo {
+  text-align: center;
+}
+
+.hum {
+  top: 5px;
+  padding-right: 5px;
+  position: fixed;
+  text-align: right;
+  width: 100%;
+}
+
 .btn {
   padding: 1rem;
   width: 60%;

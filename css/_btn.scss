@@ -1,0 +1,30 @@
+.btn {
+  padding: 1rem;
+  width: 60%;
+  position: relative;
+  margin: auto;
+  color: $black;
+  border:solid 0.5px $black;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  
+a {
+  text-decoration: none;
+  display: flex;
+  color: $black;
+  
+.yazirusi {
+  display: flex;
+  padding-left: 1rem;
+}
+.yazirusi::after {
+  content: '';
+  width: 100px;
+  height: 15px;
+  border-bottom: solid 1px;
+  border-right: solid 1px;
+  transform: skew(45deg);
+}
+}
+}

@@ -1,0 +1,17 @@
+// 変数
+$white: #fff;
+$black: #333;
+$gray: #f5f5f5;
+$gold: #84692f;
+
+// ベーススタイル
+
+body {
+  font-family: "Kaisei Tokumin", serif;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+img {
+  box-sizing: border-box;
+  max-width: 100%;
+}

@@ -12,6 +12,23 @@ img {
   max-width: 100%;
 }
 
+@media screen and (min-width: 980px) {
+  .top,
+  .menu,
+  .seat,
+  .reserve,
+  .access {
+    width: 80vw;
+    margin-right: 0px;
+    margin-left: 20vw;
+  }
+  footer {
+    width: 80vw;
+    text-align: center;
+    padding-right: 50%;
+  }
+}
+
 .menu-bgimg {
   background: url(../img/sirako.png) no-repeat center;
   position: relative;
@@ -33,6 +50,12 @@ img {
 .topimg {
   text-align: center;
   margin: 30px;
+}
+
+@media screen and (min-width: 980px) {
+  .topimg {
+    margin-top: 0px;
+  }
 }
 
 .master {
@@ -121,6 +144,35 @@ header {
   width: 100%;
 }
 
+@media screen and (min-width: 980px) {
+  header {
+    position: fixed;
+    margin: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 20vw;
+    z-index: 200;
+    height: 100vh;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  header .nav-list {
+    padding-top: 14vh;
+  }
+  header .nav-list .nav-list-item {
+    margin: 2rem;
+    list-style: none;
+    color: black;
+  }
+  header .nav-list .nav-list-item a {
+    text-decoration: none;
+    color: black;
+  }
+  header .nav-list .tel {
+    margin-top: 4rem;
+  }
+}
+
 .logo {
   text-align: center;
 }
@@ -131,6 +183,13 @@ header {
   position: fixed;
   text-align: right;
   width: 100%;
+}
+
+@media screen and (min-width: 980px) {
+  .hum img {
+    display: none;
+    height: 0px;
+  }
 }
 
 .btn {

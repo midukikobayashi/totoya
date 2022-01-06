@@ -7,6 +7,10 @@
   border:solid 0.5px $black;
   margin-top: 4rem;
   margin-bottom: 4rem;
+  @media screen and (min-width: 980px){
+    width: 30%;
+    padding-left: 10%;
+  }
 
   
 a {

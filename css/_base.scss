@@ -26,14 +26,25 @@ img {
     //background-color: burlywood;
     margin-right: 0px;
     margin-left: 20vw;
+    font-size: 1.2rem;
+
+    z-index: 999;
   }
-  footer {
-    width: 80vw;
-    //background-color: burlywood;
-    //margin-right: 0px;
-    //margin-left: 20vw;
-    text-align: center;
-    //padding-left: 50%;
-    padding-right: 50%;
+}
+
+footer {
+  width: 100%;
+  //background-color: burlywood;
+  //margin-right: 0px;
+  //margin-left: 20vw;
+  text-align: center;
+  //padding-left: 50%;
+  //padding-right: 50%;
+  height: 2rem;
+  color: $gold;
+  text-align: center;
+  margin-bottom: 10px;
+  @media screen and (min-width: 980px) {
+    padding-left: 20vw;
   }
 }

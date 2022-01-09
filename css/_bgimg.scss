@@ -30,3 +30,74 @@
     background-attachment: fixed;
   }
 }
+
+/*
+右から左へ
+----------------------------*/
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/*
+IE11対策
+----------------------------*/
+_:-ms-lang(x)::-ms-backdrop,
+.d-demo {
+  display: -ms-grid;
+  overflow: hidden;
+
+}
+/*----------------------------*/
+.d-demo {
+  @media screen and (max-width: 980px) {
+    width: 100vw;
+  }
+}
+.d-demo__wrap {
+  display: flex;
+  overflow: hidden;
+  
+}
+
+.d-demo__list {
+  display: flex;
+  list-style: none;
+}
+
+.d-demo__list--left {
+  animation: infinity-scroll-left 95s infinite linear 0.5s both;
+}
+
+.d-demo__item {
+  width: calc(100vw / 6);
+  padding: 1rem;
+  @media screen and (max-width: 980px) {
+    width: 100vw;
+    padding: 1rem;
+  }
+ 
+}
+.d-demo__item > img {
+  width: 100%;
+  
+}
+/*
+左から右へ
+----------------------------*/
+@keyframes infinity-scroll-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.d-demo__list--right {
+  animation: infinity-scroll-right 95s infinite linear 0.5s both;
+}

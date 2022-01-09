@@ -117,13 +117,11 @@ header {
   background-color: $gold;
   width: 100%;
   //position: relative;
+  @media screen and (max-width: 980px) {
+    display: none;
+    }
   .nav-list {
     //display: none;
-  }
-  @media screen and (max-width: 980px) {
-    .nav-list {
-      display: none;
-    }
   }
 
   @media screen and (min-width: 980px) {
@@ -161,6 +159,25 @@ header {
 }
 .logo {
   text-align: center;
+}
+@media screen and (min-width: 980px) {
+  .nav-list {
+    //display: none;
+  }
+  .menu-content02 {
+    font-size: 2rem;
+    //color: aquamarine;
+    line-height: 4rem;
+    padding-top: 5rem;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  .logo {
+    width: 20vw;
+    z-index: 100;
+  }
 }
 .hum {
   top: 5px;
@@ -260,6 +277,10 @@ header {
   font-size: 1rem;
   margin: 2rem;
   line-height: 2rem;
+  @media screen and (min-width: 980px) {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 }
 
 .ipimg {

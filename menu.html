@@ -13,41 +13,93 @@
   </head>
   <body>
     <header>
-      <div class="hum">
-        <a href=""><img src="/img/sakanamenu.png" alt="メニュー" /></a>
-      </div>
-      <div class="logo">
-        <img src="/img/toplogo.png" alt="ロゴマーク" />
-      </div>
-      <ul class="nav-list">
-        <li class="nav-list-item">
-          <a href="#">お料理</a>
-        </li>
-        <li class="nav-list-item"><a href="#">お席のご案内</a></li>
-        <li class="nav-list-item"><a href="#">ご予約</a></li>
-        <li class="nav-list-item"><a href="#">交通アクセス</a></li>
-        <div class="tel">TEL<br />017-723-7555</div>
-        <div class="time"><br />営業時間<br />18:00~24:00</div>
-      </ul>
-    </header>
-    <!--お料理-->
-    <div class="menuall">
-      <div class="m-menu">
-        <div class="m-img">
-          <div class="content">
-            <img
-              src="/img/C7101281-96E4-4677-B1C5-0E683B0C297F 1.png"
-              alt="えび"
-              class="content1"
-            />
+      <div class="hamburger-menu">
+        <!--ラジオボタン-->
+        <input type="checkbox" id="menu-btn-check" />
+        <label for="menu-btn-check" class="menu-btn"><span></span></label>
+        <!--spanは横棒、擬似要素で三つにする-->
+        <div class="menu-content">
+          <ul>
+            <li>
+              <a href="menu.html">お料理</a>
+            </li>
+            <li>
+              <a href="#">お席のご案内</a>
+            </li>
+            <li>
+              <a href="#">ご予約</a>
+            </li>
+            <li>
+              <a href="#">交通アクセス</a>
+            </li>
 
-            <img src="/img/IMG_7475 1.png" alt="酒" class="content2" />
-          </div>
-          <div class="boxmain">
-            <div class="m-box"></div>
-          </div>
+            <div class="tel">TEL<br />017-723-7555</div>
+            <div class="time"><br />営業時間<br />18:00~24:00</div>
+          </ul>
         </div>
       </div>
+      <div class="menu-content02">
+        <ul>
+          <li>
+            <img src="/img/toplogo.png" alt="ロゴマーク" />
+          </li>
+          <li>
+            <a href="menu.html">お料理</a>
+          </li>
+          <li>
+            <a href="#">お席のご案内</a>
+          </li>
+          <li>
+            <a href="#">ご予約</a>
+          </li>
+          <li>
+            <a href="#">交通アクセス</a>
+          </li>
+
+          <div class="tel">TEL<br />017-723-7555</div>
+          <div class="time"><br />営業時間<br />18:00~24:00</div>
+        </ul>
+      </div>
+    </header>
+
+    <div class="logo">
+      <img src="/img/toplogo.png" alt="ロゴマーク" />
+    </div>
+    <ul class="nav-list">
+      <li class="nav-list-item">
+        <a href="#">お料理</a>
+      </li>
+      <li class="nav-list-item"><a href="#">お席のご案内</a></li>
+      <li class="nav-list-item"><a href="#">ご予約</a></li>
+      <li class="nav-list-item"><a href="#">交通アクセス</a></li>
+      <div class="tel">TEL<br />017-723-7555</div>
+      <div class="time"><br />営業時間<br />18:00~24:00</div>
+    </ul>
+    <!--TOPアニメーション-->
+
+    <div class="d-demo">
+      <div class="d-demo__wrap">
+        <ul class="d-demo__list d-demo__list--left">
+          <li class="d-demo__item"><img src="/img/ipnsasimi.png" alt /></li>
+          <li class="d-demo__item"><img src="/img/ipitenpura.png" alt /></li>
+          <li class="d-demo__item"><img src="/img/ipinsirako.png" alt /></li>
+          <li class="d-demo__item"><img src="/img/ipinkakuni.png" alt /></li>
+          <li class="d-demo__item"><img src="/img/ipinsirako.png" alt /></li>
+          <li class="d-demo__item"><img src="/img/ipinkakuni.png" alt /></li>
+        </ul>
+        <ul class="d-demo__list d-demo__list--left">
+          <li class="d-demo__item"><img src="/img/ipnsasimi.png" alt /></li>
+          <li class="d-demo__item"><img src="/img/ipitenpura.png" alt /></li>
+          <li class="d-demo__item"><img src="/img/ipinsirako.png" alt /></li>
+          <li class="d-demo__item"><img src="/img/ipinkakuni.png" alt /></li>
+          <li class="d-demo__item"><img src="/img/ipinsirako.png" alt /></li>
+          <li class="d-demo__item"><img src="/img/ipinkakuni.png" alt /></li>
+        </ul>
+      </div>
+    </div>
+
+    <!--お料理-->
+    <div class="menuall">
       <div class="nomaltext">
         おまかせ料理　　2,000円（込）〜 <br />飲み放題　　2,000円（込）
       </div>
@@ -97,6 +149,28 @@
           </div>
         </div>
       </div>
+      <div class="reserve">
+        <div class="title">ご予約</div>
+
+        <div class="text">
+          まずはお気軽にお問い合わせくださいませ。
+          <br /><br />
+          下記お問い合わせフォームまたは、<br />
+          TEL：017-723-7555 まで。<br /><br />
+
+          （お問い合わせの際はHPを見た<br />
+          とお伝えいただけますとスムーズです）
+        </div>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSek_vMufGFNOTadblATFx_ehzpR9Id17JjYdGOWMsXrU68EcQ/viewform?embedded=true"
+          width="100%"
+          height="1000px"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          >読み込んでいます…</iframe
+        >
+      </div>
       <!--交通アクセス-->
       <div class="access">
         <div class="title">交通アクセス</div>
@@ -118,6 +192,6 @@
         </div>
       </div>
     </div>
-    <footer>©︎2021 izakaya totoya</footer>
+    <footer>izakaya totoya</footer>
   </body>
 </html>

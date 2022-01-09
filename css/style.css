@@ -17,8 +17,7 @@ img {
   .menu,
   .seat,
   .reserve,
-  .access
-.menuall {
+  .menuall {
     width: 80vw;
     margin-right: 0px;
     margin-left: 20vw;
@@ -40,6 +39,16 @@ footer {
   footer {
     padding-left: 20vw;
   }
+}
+
+@media screen and (min-width: 980px) {
+  .menuall .access {
+    width: 80vw;
+  }
+}
+
+.menuall .reserve {
+  margin-left: 0;
 }
 
 .menu-bgimg {
@@ -73,6 +82,110 @@ footer {
     height: 50vh;
     background-attachment: fixed;
   }
+}
+
+/*
+右から左へ
+----------------------------*/
+@-webkit-keyframes infinity-scroll-left {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+@keyframes infinity-scroll-left {
+  from {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  to {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+/*
+IE11対策
+----------------------------*/
+_:-ms-lang(x)::-ms-backdrop,
+.d-demo {
+  display: -ms-grid;
+  overflow: hidden;
+}
+
+/*----------------------------*/
+@media screen and (max-width: 980px) {
+  .d-demo {
+    width: 100vw;
+  }
+}
+
+.d-demo__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.d-demo__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.d-demo__list--left {
+  -webkit-animation: infinity-scroll-left 95s infinite linear 0.5s both;
+          animation: infinity-scroll-left 95s infinite linear 0.5s both;
+}
+
+.d-demo__item {
+  width: calc(100vw / 6);
+  padding: 1rem;
+}
+
+@media screen and (max-width: 980px) {
+  .d-demo__item {
+    width: 100vw;
+    padding: 1rem;
+  }
+}
+
+.d-demo__item > img {
+  width: 100%;
+}
+
+/*
+左から右へ
+----------------------------*/
+@-webkit-keyframes infinity-scroll-right {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+@keyframes infinity-scroll-right {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+.d-demo__list--right {
+  -webkit-animation: infinity-scroll-right 95s infinite linear 0.5s both;
+          animation: infinity-scroll-right 95s infinite linear 0.5s both;
 }
 
 .topimg {
@@ -207,7 +320,7 @@ header {
 }
 
 @media screen and (max-width: 980px) {
-  header .nav-list {
+  header {
     display: none;
   }
 }
@@ -243,6 +356,22 @@ header {
 
 .logo {
   text-align: center;
+}
+
+@media screen and (min-width: 980px) {
+  .menu-content02 {
+    font-size: 2rem;
+    line-height: 4rem;
+    padding-top: 5rem;
+  }
+  .menu-content02 a {
+    text-decoration: none;
+    color: black;
+  }
+  .logo {
+    width: 20vw;
+    z-index: 100;
+  }
 }
 
 .hum {
@@ -348,6 +477,13 @@ header {
   font-size: 1rem;
   margin: 2rem;
   line-height: 2rem;
+}
+
+@media screen and (min-width: 980px) {
+  .nomaltext {
+    font-size: 2rem;
+    line-height: 3rem;
+  }
 }
 
 .ipimg {
@@ -489,7 +625,21 @@ header {
       -ms-flex-align: center;
           align-items: center;
   z-index: 90;
-  background-color: #3584bb;
+  border-radius: 50%;
+  background-color: #84692f;
+}
+
+.btn {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.btn:hover {
+  background-color: #464444;
+}
+
+.btn:hover a {
+  color: #ffffff;
 }
 
 .menu-btn span,
@@ -540,7 +690,7 @@ header {
   top: 0;
   left: 0;
   z-index: 80;
-  background-color: #3584bb;
+  background-color: #84692f;
 }
 
 .menu-content ul {
@@ -585,7 +735,7 @@ header {
   left: 100%;
   /*leftの値を変更してメニューを画面外へ*/
   z-index: 80;
-  background-color: #3584bb;
+  background-color: #84692f;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
   /*アニメーション設定*/
@@ -594,5 +744,22 @@ header {
 #menu-btn-check:checked ~ .menu-content {
   left: 0;
   /*メニューを画面内へ*/
+}
+
+.nav-list {
+  display: none;
+}
+
+.logo {
+  background-color: #84692f;
+  z-index: 100;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn span {
+  z-index: -1;
 }
 /*# sourceMappingURL=style.css.map */

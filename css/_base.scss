@@ -21,9 +21,7 @@ img {
   .menu,
   .seat,
   .reserve,
-  .access
- .menuall
-   {
+  .menuall {
     width: 80vw;
     //background-color: burlywood;
     margin-right: 0px;
@@ -48,5 +46,17 @@ footer {
   margin-bottom: 10px;
   @media screen and (min-width: 980px) {
     padding-left: 20vw;
+  }
+}
+.menuall {
+  
+  .access {
+    @media screen and (min-width: 980px) {
+      width: 80vw;
+    }
+  }
+  .reserve {
+    //background-color: khaki;
+    margin-left: 0;
   }
 }

@@ -697,4 +697,25 @@ header {
   -webkit-transform: translateX(0);
           transform: translateX(0);
 }
+
+.fade-block1 {
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  opacity: 0;
+}
+
+/* 画面に入った時の動き */
+.fade-block1.blockIn {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+@media screen and (min-width: 980px) {
+  .menu-btn {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */

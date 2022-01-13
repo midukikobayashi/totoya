@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>居酒屋　魚ゞ家</title>
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
 
     <style>
@@ -18,19 +18,20 @@
       <div class="menu-content02">
         <ul>
           <li>
-            <img src="/img/toplogo.png" alt="ロゴマーク" />
+            <a href="/index.html">
+              <img src="/img/toplogo.png" alt="ロゴマーク" /></a>
           </li>
           <li>
-            <a href="index.html#menutop">お料理</a>
+            <a href="menu.html">お料理</a>
           </li>
           <li>
             <a href="index.html#seattop">お席のご案内</a>
           </li>
           <li>
-            <a href="#">ご予約</a>
+            <a href="#reservetop">ご予約</a>
           </li>
           <li>
-            <a href="#">交通アクセス</a>
+            <a href="#accesstop">交通アクセス</a>
           </li>
 
           <div class="tel">TEL<br />017-723-7555</div>
@@ -49,7 +50,7 @@
     <div class="f-menu">
       <a href="index.html" class="menu__item">TOP</a>
       <a href="menu.html" class="menu__item">お料理</a>
-      <a href="tel:000-1234-5678" class="menu__item">TEL</a>
+      <a href="tel:017-723-7555" class="menu__item">TEL</a>
       <div class="menu__item"><br>営業時間<br>18:00~24:00</div>
       
       
@@ -62,11 +63,11 @@
       <p class="pcimg">
         <img src="/img/pcsasimi.png" alt="刺身" />
       </p>
-      <div class="t1-text">常連になりたくなる、そんなお店です</div>
+      <div class="t1-text scroll-block fade-block1">常連になりたくなる、そんなお店です</div>
       <p class="master">
         <img src="/img/master.png" alt="大将" />
       </p>
-      <div class="text">
+      <div class="text scroll-block fade-block1">
         当店は「おまかせ」料理が メインとなります。 <br />来店されたお客様の
         お口に合わせたお料理を提供。
         <br /><br />だから、長く通いたくなる。<br /><br />
@@ -85,7 +86,7 @@
           <img src="/img/sasimi.png" alt="お刺身" />
         </div>
 
-        <div class="menutext">
+        <div class="menutext scroll-block fade-block1">
           当日仕入れた新鮮なお魚を <br />最高の状態で提供いたします。
         </div>
       </div>
@@ -93,7 +94,7 @@
         <div class="menuimg">
           <img src="/img/basasi.png" alt="馬刺し" />
         </div>
-        <div class="menutext">
+        <div class="menutext scroll-block fade-block1">
           そのほか、リクエストにお答えしてお作りいたします。<br />
           「ガッツリした料理が食べたい！」
           <br />「このお酒に合う、つまみがほしい」<br />
@@ -104,7 +105,7 @@
         <div class="menuimg">
           <img src="/img/yakitori.png" alt="焼き鳥" />
         </div>
-        <div class="menutext">
+        <div class="menutext scroll-block fade-block1">
           あなたの知らない<br />
           お料理に出会えるかも？
         </div>
@@ -124,7 +125,7 @@
         <div class="seatimg">
           <img src="/img/kaunta.png" alt="カウンター" />
         </div>
-        <div class="seattext">
+        <div class="seattext scroll-block fade-block1">
           おひとりさま〜少人数での ご利用には<br />カウンター席がおすすめ。
         </div>
       </div>
@@ -132,7 +133,7 @@
         <div class="seatimg">
           <img src="/img/zasiki.png" alt="お座敷" />
         </div>
-        <div class="seattext">
+        <div class="seattext scroll-block fade-block1">
           最大10名様掛けの お座敷席もございます。<br />
           大人数でのご利用も応相談いたします。
         </div>
@@ -141,7 +142,7 @@
         <div class="seatimg">
           <img src="/img/table.png" alt="テーブル" />
         </div>
-        <div class="seattext">
+        <div class="seattext scroll-block fade-block1">
           4〜６名様向け、<br />
           テーブル席もございます。
         </div>
@@ -149,10 +150,10 @@
     </div>
     <!--席ここまで-->
     <!--予約ここから-->
-    <div class="reserve">
+    <div id="reservetop" class="reserve">
       <div class="title">ご予約</div>
 
-      <div class="text">
+      <div class="text scroll-block fade-block1">
         まずはお気軽にお問い合わせくださいませ。
         <br /><br />
         下記お問い合わせフォームまたは、<br />
@@ -161,6 +162,7 @@
         （お問い合わせの際はHPを見た<br />
         とお伝えいただけますとスムーズです）
       </div>
+      
       <iframe
         src="https://docs.google.com/forms/d/e/1FAIpQLSek_vMufGFNOTadblATFx_ehzpR9Id17JjYdGOWMsXrU68EcQ/viewform?embedded=true"
         width="100%"
@@ -172,7 +174,7 @@
       >
     </div>
     <!--ここからアクセス-->
-    <div class="access">
+    <div id="accesstop" class="access">
       <div class="title">交通アクセス</div>
 
       <iframe

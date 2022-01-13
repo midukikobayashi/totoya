@@ -17,10 +17,19 @@ img {
   .menu,
   .seat,
   .reserve,
-  .menuall {
+  .access {
     width: 80vw;
     margin-right: 0px;
     margin-left: 20vw;
+    font-size: 1.2rem;
+    z-index: 999;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .m-access {
+    width: 80vw;
+    margin-right: 0px;
     font-size: 1.2rem;
     z-index: 999;
   }
@@ -42,13 +51,9 @@ footer {
 }
 
 @media screen and (min-width: 980px) {
-  .menuall .access {
-    width: 80vw;
+  .menuall .reserve {
+    margin-left: 0;
   }
-}
-
-.menuall .reserve {
-  margin-left: 0;
 }
 
 .menu-bgimg {
@@ -609,157 +614,87 @@ header {
           transform: skew(45deg);
 }
 
+.logo {
+  background-color: #84692f;
+}
+
+/*----------------------------
+* メニュー開閉ボタン
+*----------------------------*/
 .menu-btn {
   position: fixed;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 60px;
-  width: 60px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 90;
+  background: #333;
+  color: #fff;
   border-radius: 50%;
-  background-color: #84692f;
 }
 
-.btn {
-  -webkit-transition: 1s;
-  transition: 1s;
-}
-
-.btn:hover {
-  background-color: #464444;
-}
-
-.btn:hover a {
-  color: #ffffff;
-}
-
-.menu-btn span,
-.menu-btn span:before,
-.menu-btn span:after {
-  content: "";
-  display: block;
-  height: 3px;
-  width: 25px;
-  border-radius: 3px;
-  background-color: #ffffff;
-  position: absolute;
-}
-
-.menu-btn span:before {
-  bottom: 8px;
-}
-
-.menu-btn span:after {
-  top: 8px;
-}
-
-#menu-btn-check:checked ~ .menu-btn span {
-  background-color: rgba(255, 255, 255, 0);
-  /*メニューオープン時は真ん中の線を透明にする*/
-}
-
-#menu-btn-check:checked ~ .menu-btn span::before {
-  bottom: 0;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-}
-
-#menu-btn-check:checked ~ .menu-btn span::after {
-  top: 0;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-
-#menu-btn-check {
-  display: none;
-}
-
-.menu-content {
-  width: 100%;
-  height: 100%;
+/*----------------------------
+* メニュー本体
+*----------------------------*/
+.f-menu {
   position: fixed;
   top: 0;
-  left: 0;
-  z-index: 80;
-  background-color: #84692f;
+  right: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #555;
 }
 
-.menu-content ul {
-  padding: 70px 10px 0;
-}
-
-.menu-content ul li {
-  border-bottom: solid 1px #ffffff;
-  list-style: none;
-}
-
-.menu-content ul li a {
-  display: block;
+.menu__item {
   width: 100%;
-  font-size: 15px;
+  height: auto;
+  padding: 0.5em 1em;
+  text-align: center;
+  color: #fff;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: #ffffff;
+  line-height: 3rem;
+  font-size: 1rem;
   text-decoration: none;
-  padding: 9px 15px 10px 0;
-  position: relative;
 }
 
-.menu-content ul li a::before {
-  content: "";
-  width: 7px;
-  height: 7px;
-  border-top: solid 2px #ffffff;
-  border-right: solid 2px #ffffff;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  position: absolute;
-  right: 11px;
-  top: 16px;
+/*----------------------------
+* アニメーション部分
+*----------------------------*/
+/* アニメーション前のメニューの状態 */
+.f-menu {
+  -webkit-transform: translateX(100vw);
+          transform: translateX(100vw);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
-.menu-content {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 100%;
-  /*leftの値を変更してメニューを画面外へ*/
-  z-index: 80;
-  background-color: #84692f;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  /*アニメーション設定*/
-}
-
-#menu-btn-check:checked ~ .menu-content {
-  left: 0;
-  /*メニューを画面内へ*/
-}
-
-.nav-list {
-  display: none;
-}
-
-.logo {
-  background-color: #84692f;
-  z-index: 100;
-}
-
-.menu-btn {
-  display: none;
-}
-
-.menu-btn span {
-  z-index: -1;
+/* アニメーション後のメニューの状態 */
+.f-menu.is-active {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 /*# sourceMappingURL=style.css.map */
